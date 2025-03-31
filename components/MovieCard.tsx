@@ -17,7 +17,7 @@ const MovieCard = ({
           source={{
             uri: poster_path
               ? `https://image.tmdb.org/t/p/w500${poster_path}`
-              : "https://placeholder.com/600x400/1a1a1a/ffffff.png",
+              : "https://via.placeholder.com/600x400/1a1a1a/ffffff.png",
           }}
           className="w-full h-48 rounded-lg"
           resizeMode="cover"
@@ -28,12 +28,12 @@ const MovieCard = ({
         >
           {title}
         </Text>
-        <view className="flex-row justify-start items-center gap-x-1">
+        <View className="flex-row justify-start items-center gap-x-1">
           <Text className="text-white text-base font-semibold">
             {Math.round(vote_average) / 2}
             <Image source={icons.star} className="w-3 h-3" />
           </Text>
-        </view>
+        </View>
 
         <View className="flex-row justify-between items-center gap-x-1">
           <Text className="text-light-300 text-xs font-medium mt-1">
